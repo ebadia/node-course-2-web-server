@@ -70,6 +70,12 @@ app.get('/bad', (req,res) => {
   })
 })
 
+app.get('/projects', (req,res) => {
+  res.render( 'projects.hbs', {
+    pageTitle: 'Projects',
+  })
+})
+
 app.listen(port, () => {
   console.log(`Server up in port ${port}`)
 })
